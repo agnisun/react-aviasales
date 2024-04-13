@@ -1,0 +1,117 @@
+.main__tickets {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex-grow: 1;
+}
+
+.main__tickets-sort {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.main__tickets-sort__button {
+	background-color: #fff;
+	border: 1px solid #dfe5ec;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	cursor: pointer;
+
+	&.active {
+		background-color: var(--button);
+		border-color: var(--button);
+		color: #fff;
+	}
+
+	&:first-child {
+		border-right: none;
+	}
+
+	&:last-child {
+		border-left: none;
+	}
+}
+
+.main__tickets-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.main__tickets-list__item {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.main__tickets-list__item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main__tickets-list__item-price {
+	color: var(--button);
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.main__tickets-list__item-logo {
+	max-width: 110px;
+	height: 36px;
+
+	& > img {
+		width: 100%;
+	}
+}
+
+.main__tickets-list__item-info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.main__tickets-list__item-info__row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.main__tickets-list__item-info__suptitle {
+	color: rgb(160, 176, 185);
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.main__tickets-list__item-info__text {
+	color: rgb(74, 74, 74);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.main__tickets-load {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background: var(--button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	height: 50px;
+	cursor: pointer;
+}
