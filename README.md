@@ -1,1 +1,1 @@
-https://aviasales-3mqulftci-kirinayiks-projects.vercel.app
+https://aviasales-tau-three.vercel.app/
